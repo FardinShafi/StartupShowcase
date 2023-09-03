@@ -13,30 +13,30 @@
 
 <body>
     <div class="login-form">
-        <form action="login.php" method="POST">
+        <form onsubmit="return load();">
             <div class="head">
                 <a href="home.html"><img class="imglogo" src="images/logo.png"></a>
                 <h1>Login to PARKsite</h1>
             </div>
             <div class="content">
                 <div class="input-field">
-                    <input type="clientid" name="clientid" placeholder="User ID">
+                    <input type="email" placeholder="User ID">
                 </div>
                 <div class="input-field">
-                    <input type="pass" name="pass" placeholder="Password">
+                    <input type="password" placeholder="Password">
                 </div>
                 <br>
-                <select id="menuX" name= "ctype" >
-                    <option value="Vehicle Owner">Vehicle Owner</option>
-                    <option value="Garage Owner">Garage Owner</option>
-                    <option value="Supervisor">Supervisor</option>
-                    <option value="Admin">Admin</option>
+                <select id="menuX">
+                    <option value="1">Vehicle Owner</option>
+                    <option value="2">Garage Owner</option>
+                    <option value="3">Supervisor</option>
+                    <option value="4">Admin</option>
                 </select>
                 <br>
                 <a href="#" class="link">Forgot Your Password?</a>
             </div>
             <div class="action">
-                <button type="submit" value="submit">Log in</button>
+                <button onclick="load()">Log in</button>
             </div>
         </form>
     </div>
