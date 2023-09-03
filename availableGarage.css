@@ -170,7 +170,7 @@ main {
     main {
         height: 1600px;
     }
-    .map iframe{
+    #map{
         width: 90vw;
         height: 80vw;
     }
