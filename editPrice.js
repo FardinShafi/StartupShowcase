@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function fetchCityAndAreaOptions() {
     // Simulated data, replace with actual API call or database fetch
     var cities = ["Dhaka", "Barishal", "Cumilla", "Rajshahi", "Lalbag"];
-    var areas = ["Area1", "Area2", "Area3", "Area4", "Area5"];
+    var areas = ["Gulshan", "Bashundhara", "Taltola", "Uttara", "Dhanmondi"];
 
     var citySelect = document.getElementById("citySelect");
     var areaSelect = document.getElementById("areaSelect");
