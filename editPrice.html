@@ -43,12 +43,15 @@
         <br /><br /><br /><br /><br /><br /><br />
 
         <div class="sidebar">
-            <a href="admin.html"><button class="sidebtn"><img src="images/analytics_994170.png" alt=""> <br>View System Statistics</button></a>
-            <a href="verifyUser.html"><button class="sidebtn"><img src="images/authentication_1791961.png" alt=""><br>Verify User</button></a>
-            <a href="editPrice.html"><button class="sidebtn"><img src="images/pricing_1728450.png"
-                  alt=""><br>Edit Price</button></a>
-            <a href="#"><button class="sidebtn"><img src="images/cheque_2250736.png" alt=""><br>Edit Earnings</button></a>
-          </div>
+            <a href="admin.html"><button class="sidebtn"><img src="images/analytics_994170.png" alt=""> <br>View System
+                    Statistics</button></a>
+            <a href="verifyUser.html"><button class="sidebtn"><img src="images/authentication_1791961.png"
+                        alt=""><br>Verify User</button></a>
+            <a href="editPrice.html"><button class="sidebtn"><img src="images/pricing_1728450.png" alt=""><br>Edit
+                    Price</button></a>
+            <a href="#"><button class="sidebtn"><img src="images/cheque_2250736.png" alt=""><br>Edit
+                    Earnings</button></a>
+        </div>
         <div class="content">
             <div id="button-class" class="button-class">
                 <button id="Edit" class="btn1" onclick="edit()">Edit Price</button>
@@ -72,8 +75,31 @@
                     <input type="text" id="baseFareInput" class="field" required>
                     <label>Hourly Rate</label>
                     <input type="text" id="hourlyRateInput" class="field" required>
-                    <button type="submit" class="btn1">Submit</button>
+                    <!-- <button type="submit" class="btn1">Submit</button> -->
+                    <button type="button" style="color: black;" class="btn btn-primary btn1" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Submit
+                    </button>
                 </form>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header booba-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel"><img style="width: 90px;" class="popup_img"
+                                src="images/yes-unscreen.gif" alt="">
+                        </h1>
+
+                    </div>
+                    <div class="modal-body myBody">
+                        <h3>Thank You</h3>
+                        <p>Price Set Was Successful</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href=""><button type="button" class=" btn2" data-bs-dismiss="modal">OK</button></a>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -107,7 +133,8 @@
                         <a class="links" href="termsAndCondition.html">
                             <h6 class="text-uppercase mb-4 font-weight-bold">Terms & Conditions</h6>
                         </a>
-                        <p><i class="fas fa-envelope mr-3"></i> <a href="Bangla/homeBangla.html" style=" color: white;">Language: বাংলা</a></p>
+                        <p><i class="fas fa-envelope mr-3"></i> <a href="Bangla/homeBangla.html"
+                                style=" color: white;">Language: বাংলা</a></p>
                     </div>
                 </div>
                 <!--Grid row-->

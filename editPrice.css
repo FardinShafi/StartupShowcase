@@ -57,6 +57,19 @@
     background-color: #9ed368;
 }
 
+.modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myBody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 main {
     margin-left: 0px;
     margin-right: 0px;
@@ -157,7 +170,6 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
 
 .button-class {
