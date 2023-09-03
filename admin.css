@@ -280,3 +280,151 @@ main {
         margin-bottom: 30px;
     }
 }
+
+@media screen and (max-width: 1300px){
+    .cardX h3{
+        font-size: 1.5rem;
+    }
+    .cardX h5{
+        font-size: 1rem;
+    }
+    .sidebar button{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    body{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header{
+        margin-left: -50vw;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 240vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sidebar{
+        margin-top: -100px;
+        width: 100%;
+        height: 80vh;
+        border: none;
+        justify-content: space-evenly;
+    }
+    
+    .sidebtn{
+        width: 40vw;
+    }
+
+    .innercont{
+        width: 90vw;
+        height: 160vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top{
+        width: 90vw;
+    }
+
+    .bottom{
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left{
+        justify-content: space-evenly;
+        margin-top: -40px;
+    }
+
+    .bla{
+        margin-top: 10px;
+        margin-left: 7vw;
+        width: 40vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .manual{
+        width: 40vw;
+        margin-top: 20px;
+    }
+
+    .cardX{
+        margin-left: 0;
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 650px){
+    main{
+        height: 260vh;
+    }
+
+    .bottom{
+        width: 90vw;
+    }
+
+    .left{
+        width: 90vw;
+    }
+
+    .bla{
+        margin-left: 12vw;
+    }
+
+    .manual{
+        width: 70vw;
+    }
+
+    .cardX{
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width:500px){
+    .sidebtn{
+        width: 70vw;
+        height: 15vh;
+    }
+
+    .top, .innercont{
+        margin-top: 0;
+    }
+
+    .bla{
+        margin-left: 10vw;
+    }
+
+    .right{
+        justify-content: space-around;
+        height: 70vh;
+    }
+
+    .cardX{
+        height: 30vh;
+    }
+
+    .card img{
+        width: 10px;
+        height: 10px;
+    }
+
+    .cardX h3{
+        font-size: 1rem;
+    }
+
+    footer{
+        margin-top: 90px;
+    }
+}
