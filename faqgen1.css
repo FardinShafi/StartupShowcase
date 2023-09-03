@@ -105,7 +105,7 @@ main {
     font-size: 1.2rem;
 }
 
-.video video{
+iframe{
     background-color: aqua;
     width: 35vw;
     height: 35vh;
@@ -138,7 +138,7 @@ main {
         background-repeat: no-repeat;
     }
 
-    .video video{
+    iframe{
         width: 70vw;
     }
 }
@@ -157,7 +157,7 @@ main {
         height: 30vh;
     }
 
-    .video video{
+    iframe{
         width: 100%;
         height: 20vh;
     }
