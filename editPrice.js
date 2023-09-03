@@ -4,8 +4,7 @@ function add() {
     var newDiv = document.createElement("div");
     newDiv.className = "myform";
     // newDiv.setAttribute('id', 'myform2');
-    newDiv.innerHTML =
-        `<form class="myform" action="addPrice.php"  method="POST"
+    newDiv.innerHTML = `<form class="myform" action="addPrice.php"  method="POST"
         <label>Enter City</label>
         <input type="text" name="city" class="field" required>
         <label>Enter Area</label>
@@ -15,8 +14,32 @@ function add() {
         <label>Hourly Rate</label>
         <input type="text" class="field" name="hourly" required>
 
-        <a href="" style="text-decoration: none;color: black; width: 80px;"><button
-                class="btn2">Submit</button></a>`;
+        <button type="button" style="color: black;" class="btn btn-primary btn1" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Submit
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header booba-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel"><img style="width: 90px;" class="popup_img"
+                                        src="images/yes-unscreen.gif" alt="">
+                                </h1>
+        
+                            </div>
+                            <div class="modal-body myBody">
+                                <h3>Thank You</h3>
+                                <p>Price Set Was Successful</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#"><button type="button" class=" btn2" data-bs-dismiss="modal">OK</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                    
+                    
+                    `;
     hahaDiv.appendChild(newDiv);
 }
 
@@ -41,21 +64,47 @@ function edit() {
     <input type="text" id="baseFareInput" class="field" required>
     <label>Hourly Rate</label>
     <input type="text" id="hourlyRateInput" class="field" required>
-    <button type="submit" class="btn1">Submit</button>
-</form>`;
+    <button type="button" style="color: black;" class="btn btn-primary btn1" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Confirm
+                </button>
+</form>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header booba-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel"><img style="width: 90px;"
+                                    class="popup_img" src="images/yes-unscreen.gif" alt="">
+                            </h1>
+
+                        </div>
+                        <div class="modal-body myBody">
+                            <h3>Thank You</h3>
+                            <p>Your Booking Has Been Successful</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href=""><button type="button" class=" btn2" data-bs-dismiss="modal">OK</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+`;
     hahaDiv.appendChild(newDiv);
 }
 
 // Fetch city and area options and populate the selects
 document.addEventListener("DOMContentLoaded", function () {
     fetchCityAndAreaOptions();
-    
+
     // Handle search button click
     var searchButton = document.getElementById("searchButton");
     searchButton.addEventListener("click", function () {
         fetchValuesForCityAndArea();
     });
-    
+
     // Handle form submit
     var editForm = document.getElementById("editForm");
     editForm.addEventListener("submit", function (event) {
@@ -108,4 +157,3 @@ function updateDatabase() {
     // Simulated data, replace with actual API call or database update
     console.log("Updating database...");
 }
-
